@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carga de Archivos - Ultragroup</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f7f6; }
+        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        input[type="file"] { margin: 20px 0; display: block; }
+        button { background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Subir Archivo de Ventas</h2>
+        <form action="TU_URL_DE_WEBHOOK_AQUI" method="POST" enctype="multipart/form-data">
+            <input type="file" name="data" required />
+            <button type="submit">Enviar a OneDrive</button>
+        </form>
+    </div>
+</body>
+</html>
